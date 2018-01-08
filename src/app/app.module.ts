@@ -1,11 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpModule } from '@angular/http';
+
 
 
 import { AppComponent } from './app.component';
 import { ValueComponent } from './value/value.component';
 import { NavComponent } from './nav/nav.component';
+import {FormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { NavComponent } from './nav/nav.component';
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
